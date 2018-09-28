@@ -1,0 +1,7 @@
+//
+// Custom Key Bindings
+// AUTHOR: James Hanford
+//
+[
+    { "key": "ctrl+1", "command": "revealFileInOS"},
+]
