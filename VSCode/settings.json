@@ -1,16 +1,26 @@
+//
+// Custom Settings
+// AUTHOR: James Hanford
+//
 {
+    //Window
     "window.zoomLevel": -1,
     "window.titleBarStyle": "custom",
 
-    "workbench.iconTheme": "vscode-icons",
+    //File Explorer & Workbench
     "explorer.confirmDragAndDrop": false,
+
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.editor.closeEmptyGroups": true,
+
+    //Terminal
     "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
     "terminal.integrated.rendererType": "dom",
-    "workbench.editor.closeEmptyGroups": true,
-    "breadcrumbs.enabled": true,
-
+    
+    //Editor
     "editor.accessibilitySupport": "off",
     "editor.renderWhitespace": "boundary",
+    "breadcrumbs.enabled": true,
 
     //PHP Settings
     "php.executablePath": "C:\\tools\\php55\\php.exe",
