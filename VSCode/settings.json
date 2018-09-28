@@ -14,7 +14,6 @@
 
     //PHP Settings
     "php.executablePath": "C:\\tools\\php55\\php.exe",
-
     "php.validate.enable": true,
     "php.validate.executablePath": "C:\\tools\\php55\\php.exe",
     "php.validate.run": "onType",
