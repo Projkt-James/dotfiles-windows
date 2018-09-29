@@ -14,7 +14,7 @@ del %VSCodePath%\settings.json
 rmdir %VSCodePath%\settings.json
 echo.
 echo Generating new symbolic link...
-MKLINK /d %VSCodePath%\settings.json %dotfilesPath%\settings.json
+MKLINK %VSCodePath%\settings.json %dotfilesPath%\settings.json
 echo.
 
 echo [LINKING FILE] keybindings.json
@@ -24,7 +24,7 @@ del %VSCodePath%\keybindings.json
 rmdir %VSCodePath%\keybindings.json
 echo.
 echo Generating new symbolic link...
-MKLINK /d %VSCodePath%\keybindings.json %dotfilesPath%\keybindings.json
+MKLINK %VSCodePath%\keybindings.json %dotfilesPath%\keybindings.json
 echo.
 
 echo [LINKING DIR] snippets
