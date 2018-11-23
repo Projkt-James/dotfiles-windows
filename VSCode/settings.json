@@ -18,6 +18,7 @@
     "terminal.integrated.rendererType": "dom",
     
     //Editor
+    "editor.tabSize": 4,
     "editor.accessibilitySupport": "off",
     "editor.renderWhitespace": "boundary",
     "breadcrumbs.enabled": true,
