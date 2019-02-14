@@ -3,5 +3,50 @@
 // AUTHOR: James Hanford
 //
 [
-    { "key": "ctrl+1", "command": "revealFileInOS"},
+    //
+    // VS Code Base
+    //
+
+    {
+        "key": "ctrl+1",
+        "command": "revealFileInOS"
+    },
+    
+    //
+    // Bookmarks Extension
+    //
+
+    // Jump next bookmark
+    {
+        "key": "ctrl+alt+.",
+        "command": "bookmarks.jumpToNext",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "-bookmarks.jumpToNext",
+        "when": "editorTextFocus"
+    },
+    // Jump previous bookmark
+    {
+        "key": "ctrl+alt+,",
+        "command": "bookmarks.jumpToPrevious",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "-bookmarks.jumpToPrevious",
+        "when": "editorTextFocus"
+    },
+    // Toggle bookmark
+    {
+        "key": "ctrl+alt+/",
+        "command": "bookmarks.toggle",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+k",
+        "command": "-bookmarks.toggle",
+        "when": "editorTextFocus"
+    },
 ]
