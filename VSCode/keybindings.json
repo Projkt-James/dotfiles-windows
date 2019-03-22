@@ -1,20 +1,47 @@
-//
-// Custom Key Bindings
-// AUTHOR: James Hanford
-//
+/*
+    TITLE: Custom VS Code ~ Key Bindings
+    AUTHOR: James Hanford
+*/
 [
+
     //
     // VS Code Base
     //
 
     {
-        "key": "ctrl+1",
-        "command": "revealFileInOS"
+        "key": "ctl+,",
+        "command": "-workbench.action.openSettings"
     },
-    
+
+    {
+        "key": "ctrl+1",
+        "command": "revealFileInOS",
+        "when": "editorTextFocus"
+    },
+
+    // Editor - Folding
+    // TODO I want to come up with a better personal solution to code folding
+    {
+        "key": "alt+f1",
+        "command": "editor.foldAll",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+f2",
+        "command": "editor.unfoldAll",
+        "when": "editorTextFocus"
+    },
+
     //
     // Bookmarks Extension
     //
+
+    // Clear bookmarks in file
+    {
+        "key": "alt+backspace",
+        "command": "bookmarks.clear",
+        "when": "editorTextFocus"
+    },
 
     // Jump next bookmark
     {
@@ -23,13 +50,19 @@
         "when": "editorTextFocus"
     },
     {
+        "key": "alt+.",
+        "command": "bookmarks.jumpToNext",
+        "when": "editorTextFocus"
+    },
+    {
         "key": "ctrl+alt+l",
         "command": "-bookmarks.jumpToNext",
         "when": "editorTextFocus"
     },
+
     // Jump previous bookmark
     {
-        "key": "ctrl+alt+,",
+        "key": "alt+,",
         "command": "bookmarks.jumpToPrevious",
         "when": "editorTextFocus"
     },
@@ -38,9 +71,10 @@
         "command": "-bookmarks.jumpToPrevious",
         "when": "editorTextFocus"
     },
+
     // Toggle bookmark
     {
-        "key": "ctrl+alt+/",
+        "key": "alt+/",
         "command": "bookmarks.toggle",
         "when": "editorTextFocus"
     },

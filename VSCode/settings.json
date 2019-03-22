@@ -1,32 +1,32 @@
-//
-// Custom Settings
-// AUTHOR: James Hanford
-//
+/*
+    TITLE: Custom VS Code ~ Settings
+    AUTHOR: James Hanford
+*/
 {
-    //Window
+    // Window
     "window.zoomLevel": -1,
     "window.titleBarStyle": "custom",
 
-    //File Explorer & Workbench
+    // File Explorer & Workbench
     "explorer.confirmDragAndDrop": false,
 
     "workbench.iconTheme": "vscode-icons",
     "workbench.editor.closeEmptyGroups": true,
 
-    //Terminal
+    // Terminal
     "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
     "terminal.integrated.rendererType": "dom",
     
-    //Editor
+    // Editor
     "editor.tabSize": 4,
     "editor.accessibilitySupport": "off",
     "editor.renderWhitespace": "boundary",
     "breadcrumbs.enabled": true,
 
-    //Git
+    // Git
     "git.alwaysShowStagedChangesResourceGroup": true,
 
-    //PHP Settings
+    // PHP Settings
     "php.executablePath": "C:\\tools\\php55\\php.exe",
     "php.validate.enable": true,
     "php.validate.executablePath": "C:\\tools\\php55\\php.exe",
