@@ -26,6 +26,11 @@
     // Git
     "git.alwaysShowStagedChangesResourceGroup": true,
 
+    // Git Lens
+    "gitlens.currentLine.enabled": false,
+    "gitlens.codeLens.authors.enabled": true,
+    "gitlens.codeLens.recentChange.enabled": true,
+
     // PHP Settings
     "php.executablePath": "C:\\tools\\php55\\php.exe",
     "php.validate.enable": true,
