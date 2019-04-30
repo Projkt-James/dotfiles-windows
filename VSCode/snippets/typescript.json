@@ -1,7 +1,24 @@
 {
-    "Angular Component File (Inline Template)": {
-        "prefix": "ng.component.inline.html",
+
+    "Angular Module": {
+        "description": "Angular Module",
+        "prefix": "ng.module",
+        "body": [
+            "@NgModule({",
+                "\timports: [",
+                "\t],",
+                "\tdeclarations: [",
+                "\t],",
+                "\texports: [",
+                "\t]",
+            "})",
+            "export class ${0} { }"
+        ]
+    },
+
+    "Angular Component (Inline Template)": {
         "description": "Angular Component File (Inline Template)",
+        "prefix": "ng.component.inline.html",
         "body": [
             "@Component({",
                 "\tselector: `${1}`,",
@@ -15,9 +32,9 @@
         ]
     },
 
-    "Angular Component File (External Template)": {
-        "prefix": "ng.component.external.html",
+    "Angular Component (External Template)": {
         "description": "Angular Component File (External Template)",
+        "prefix": "ng.component.external.html",
         "body": [
             "@Component({",
                 "\tselector: '${1}',",
