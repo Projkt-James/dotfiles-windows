@@ -1,0 +1,33 @@
+{
+    "Angular Component File (Inline Template)": {
+        "prefix": "ng.component.inline.html",
+        "description": "Angular Component File (Inline Template)",
+        "body": [
+            "@Component({",
+                "\tselector: `${1}`,",
+                "\ttemplate: ``,",
+                "\tstyleUrls: ['${2}.scss'],",
+                "\thost: { }",
+            "})",
+            "export class ${3} {",
+            "\t${4}",
+            "}"
+        ]
+    },
+
+    "Angular Component File (External Template)": {
+        "prefix": "ng.component.external.html",
+        "description": "Angular Component File (External Template)",
+        "body": [
+            "@Component({",
+                "\tselector: '${1}',",
+                "\ttemplateUrl: '${2}.html',",
+                "\tstyleUrls: ['${2}.scss'],",
+                "\thost: { }",
+            "})",
+            "export class ${3} {",
+            "\t${4}",
+            "}"
+        ]
+    }
+}
