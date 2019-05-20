@@ -83,4 +83,21 @@
         "command": "-bookmarks.toggle",
         "when": "editorTextFocus"
     },
+
+    //Sql
+    {
+        "key": "f5",
+        "command": "-workbench.action.debug.start",
+        "when": "!inDebugMode"
+    },
+    {
+        "key": "f5",
+        "command": "extension.runQuery",
+        "when": "editorTextFocus && editorLangId == 'sql'"
+    },
+    {
+        "key": "f5",
+        "command": "workbench.action.debug.start",
+        "when": "!inDebugMode && editorLangId != 'sql'"
+    },
 ]

@@ -19,10 +19,12 @@
     
     // Editor
     "editor.tabSize": 4,
+    "editor.codeLens": true,
     "editor.accessibilitySupport": "off",
     "editor.renderWhitespace": "boundary",
     "breadcrumbs.enabled": true,
 
+    "typescript.implementationsCodeLens.enabled": true,
     "[typescript]": {
         "editor.formatOnPaste": true,
         "editor.autoClosingQuotes": "never"
@@ -33,6 +35,7 @@
     
     // Git
     "git.alwaysShowStagedChangesResourceGroup": true,
+    "git.enableSmartCommit": true,
 
     // Git Lens
     "gitlens.currentLine.enabled": false,
