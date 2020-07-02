@@ -4,13 +4,12 @@
 */
 {
     // Window
-    "window.zoomLevel": -1,
+    "window.zoomLevel": -2,
     "window.titleBarStyle": "custom",
 
     // File Explorer & Workbench
     "explorer.confirmDragAndDrop": false,
     
-    "workbench.iconTheme": "vscode-icons",
     "workbench.editor.closeEmptyGroups": true,
 
     // Terminal
@@ -25,13 +24,24 @@
     "breadcrumbs.enabled": true,
 
     "typescript.implementationsCodeLens.enabled": true,
-    "[typescript]": {
+    "[javascript]": {
+        "editor.tabSize": 4,
         "editor.formatOnPaste": true,
         "editor.autoClosingQuotes": "never"
     },
+    "[json]": {
+        "editor.tabSize": 4
+    },
+    "[typescript]": {
+        "editor.tabSize": 4,
+        "editor.formatOnPaste": true,
+        "editor.autoClosingQuotes": "never"
+    },
+    "[yaml]": {
+        "editor.tabSize": 4
+    },
 
     // VS Icons
-    "vsicons.projectDetection.autoReload": true,
     
     // Git
     "git.alwaysShowStagedChangesResourceGroup": true,
@@ -47,4 +57,20 @@
     "php.validate.enable": true,
     "php.validate.executablePath": "C:\\tools\\php55\\php.exe",
     "php.validate.run": "onType",
+    "vsicons.projectDetection.autoReload": true,
+    "git.autofetch": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.columnSelection": false,
+    "git.confirmSync": false,
+    "mssql.connections": [
+        {
+            "server": "localhost",
+            "database": "",
+            "authenticationType": "Integrated",
+            "password": ""
+        }
+    ],
+    "aws.samcli.location": "C:\\Program Files\\Amazon\\AWSSAMCLI\\bin\\sam.cmd",
+    "aws.profile": "profile:default"
 }
