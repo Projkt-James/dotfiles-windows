@@ -8,8 +8,8 @@
     "window.titleBarStyle": "custom",
 
     // File Explorer & Workbench
+    "explorer.compactFolders": false,
     "explorer.confirmDragAndDrop": false,
-    
     "workbench.editor.closeEmptyGroups": true,
 
     // Terminal
@@ -24,6 +24,7 @@
     "breadcrumbs.enabled": true,
 
     "typescript.implementationsCodeLens.enabled": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
     "[javascript]": {
         "editor.tabSize": 4,
         "editor.formatOnPaste": true,
@@ -41,11 +42,16 @@
         "editor.tabSize": 4
     },
 
-    // VS Icons
-    
+    // SCM
+    "scm.defaultViewMode": "tree",
+    "scm.alwaysShowRepositories": true,
+
     // Git
+    "git.autofetch": true,
     "git.alwaysShowStagedChangesResourceGroup": true,
+    "git.inputValidationLength": 72,
     "git.enableSmartCommit": true,
+    "git.confirmSync": false,
 
     // Git Lens
     "gitlens.currentLine.enabled": false,
@@ -57,12 +63,13 @@
     "php.validate.enable": true,
     "php.validate.executablePath": "C:\\tools\\php55\\php.exe",
     "php.validate.run": "onType",
+
+    // VS Icons
     "vsicons.projectDetection.autoReload": true,
-    "git.autofetch": true,
-    "typescript.updateImportsOnFileMove.enabled": "always",
+    
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.columnSelection": false,
-    "git.confirmSync": false,
+    
     "mssql.connections": [
         {
             "server": "localhost",
@@ -71,6 +78,37 @@
             "password": ""
         }
     ],
+
+    // AWS CloudFormation & SAM
     "aws.samcli.location": "C:\\Program Files\\Amazon\\AWSSAMCLI\\bin\\sam.cmd",
-    "aws.profile": "profile:default"
+    "yaml.customTags": [
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
+    ],
+    "yaml.validate": false
 }
