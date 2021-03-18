@@ -1,13 +1,12 @@
-/*
-    TITLE: Custom VS Code ~ Key Bindings
-    AUTHOR: James Hanford
-*/
+/**
+ * TITLE: Custom VS Code ~ Key Bindings
+ * AUTHOR: James Hanford
+ */
 [
 
     //
     // VS Code Base
     //
-
     {
         "key": "ctl+,",
         "command": "-workbench.action.openSettings"
@@ -18,9 +17,13 @@
         "command": "revealFileInOS",
         "when": "editorTextFocus"
     },
+    {
+        "key": "alt+s",
+        "command": "workbench.files.action.showActiveFileInExplorer",
+        "where": "editorTextFocus"
+    },
 
     // Editor - Folding
-    // TODO I want to come up with a better personal solution to code folding
     {
         "key": "alt+f1",
         "command": "editor.foldAll",
@@ -33,9 +36,8 @@
     },
 
     //
-    // Bookmarks Extension
+    // [Extension] Bookmarks
     //
-
     // Clear bookmarks in file
     {
         "key": "alt+backspace",
@@ -84,7 +86,9 @@
         "when": "editorTextFocus"
     },
 
-    //Sql
+    //
+    // [Language] Sql
+    //
     {
         "key": "f5",
         "command": "-workbench.action.debug.start",
@@ -99,5 +103,5 @@
         "key": "f5",
         "command": "workbench.action.debug.start",
         "when": "!inDebugMode && editorLangId != 'sql'"
-    },
+    }
 ]

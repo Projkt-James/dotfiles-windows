@@ -1,21 +1,23 @@
-/*
-    TITLE: Custom VS Code ~ Settings
-    AUTHOR: James Hanford
-*/
+/**
+ * TITLE: Custom VS Code ~ Settings
+ * AUTHOR: James Hanford
+ */
 {
     // Window
-    "window.zoomLevel": -2,
+    "window.zoomLevel": -1.5,
     "window.titleBarStyle": "custom",
 
     // File Explorer & Workbench
+    "explorer.autoReveal": false,
     "explorer.compactFolders": false,
     "explorer.confirmDragAndDrop": false,
     "workbench.editor.closeEmptyGroups": true,
 
     // Terminal
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
     "terminal.integrated.rendererType": "dom",
-    
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "terminal.integrated.shell.linux": "/bin/bash",
+
     // Editor
     "editor.tabSize": 4,
     "editor.codeLens": true,
@@ -25,6 +27,7 @@
 
     "typescript.implementationsCodeLens.enabled": true,
     "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.preferences.quoteStyle": "single",
     "[javascript]": {
         "editor.tabSize": 4,
         "editor.formatOnPaste": true,
@@ -47,7 +50,7 @@
     "scm.alwaysShowRepositories": true,
 
     // Git
-    "git.autofetch": true,
+    "git.autofetch": false,
     "git.alwaysShowStagedChangesResourceGroup": true,
     "git.inputValidationLength": 72,
     "git.enableSmartCommit": true,
@@ -58,18 +61,12 @@
     "gitlens.codeLens.authors.enabled": true,
     "gitlens.codeLens.recentChange.enabled": true,
 
-    // PHP Settings
-    "php.executablePath": "C:\\tools\\php55\\php.exe",
-    "php.validate.enable": true,
-    "php.validate.executablePath": "C:\\tools\\php55\\php.exe",
-    "php.validate.run": "onType",
-
     // VS Icons
     "vsicons.projectDetection.autoReload": true,
-    
+
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.columnSelection": false,
-    
+
     "mssql.connections": [
         {
             "server": "localhost",
