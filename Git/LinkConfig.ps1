@@ -7,7 +7,7 @@ if ($currentPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administ
     Remove-Item "$HOME/.gitconfig"
 
     Write-Host "Creating symlink to .gitconfig file!" -ForegroundColor Gray
-    New-Item -ItemType symboliclink -Path $HOME -Name .gitconfig -Value "$PWD\.gitconfig" | Out-Null
+    New-Item -ItemType symboliclink -Path $HOME -Name .gitconfig -Value "$PWD\gitconfig.symlink" | Out-Null
     Write-Host "Complete!" -ForegroundColor Green
 } else {
     Write-Host "[Error] Unable to create symlink, Admin privileges required!" -ForegroundColor DarkRed
