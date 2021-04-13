@@ -1,3 +1,14 @@
 [user]
     name = James Hanford
     email = james@projkt.io
+
+[alias]
+    blocal = branch
+    bremote = branch -r
+    bmerged = branch --merged
+
+    # Show the user email for the current repo
+    whoami = config user.email
+
+[branch]
+    sort = -committerdate
