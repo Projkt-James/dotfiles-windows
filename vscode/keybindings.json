@@ -34,6 +34,16 @@
         "command": "editor.unfoldAll",
         "when": "editorTextFocus"
     },
+    {
+        "key": "alt+left",
+        "command": "editor.fold",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+right",
+        "command": "editor.unfold",
+        "when": "editorTextFocus"
+    },
 
     //
     // [Extension] Bookmarks
