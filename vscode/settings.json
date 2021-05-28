@@ -14,9 +14,22 @@
     "workbench.editor.closeEmptyGroups": true,
 
     // Terminal
-    "terminal.integrated.rendererType": "dom",
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-    "terminal.integrated.shell.linux": "/bin/bash",
+    "terminal.integrated.tabs.enabled": true,
+    "terminal.integrated.profiles.windows": {
+        "Powershell": {
+            "overrideName": true,
+            "source": "PowerShell"
+        },
+        "Ubuntu (WSL)": {
+            "overrideName": true,
+            "path": "wsl /bin/bash"
+        }
+    },
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+          "path": "/bin/bash"
+        }
+    },
 
     // Editor
     "editor.tabSize": 4,
