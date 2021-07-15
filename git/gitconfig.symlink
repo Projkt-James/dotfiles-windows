@@ -7,6 +7,9 @@
     bremote = branch -r
     bmerged = branch --merged
 
+    # Checkout previous branch
+    clast = checkout @{-1}
+
     # Show the user email for the current repo
     whoami = config user.email
 
