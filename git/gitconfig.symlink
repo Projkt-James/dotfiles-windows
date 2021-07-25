@@ -10,6 +10,8 @@
     # Checkout previous branch
     clast = checkout @{-1}
 
+    log1 = log --oneline
+
     # Show the user email for the current repo
     whoami = config user.email
 
