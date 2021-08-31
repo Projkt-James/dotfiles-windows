@@ -12,6 +12,8 @@
 
     log1 = log --oneline
 
+    undo-last = reset HEAD~
+
     # Show the user email for the current repo
     whoami = config user.email
 
