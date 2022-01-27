@@ -8,8 +8,28 @@
     // VS Code Base
     //
     {
-        "key": "ctl+,",
+        "key": "ctrl+,",
         "command": "-workbench.action.openSettings"
+    },
+    {
+        "key": "ctrl+,",
+        "command": "workbench.action.showCommands"
+    },
+
+    // Groups
+    {
+        "key": "ctrl+left",
+        "command": "workbench.action.moveEditorToPreviousGroup",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+right",
+        "command": "workbench.action.moveEditorToNextGroup",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "f1",
+        "command": "workbench.action.focusFirstEditorGroup"
     },
 
     {
@@ -23,7 +43,7 @@
         "where": "editorTextFocus"
     },
 
-    // Editor - Folding
+    // Folding
     {
         "key": "alt+f1",
         "command": "editor.foldAll",
