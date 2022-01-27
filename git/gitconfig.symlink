@@ -7,6 +7,9 @@
     bremote = branch -r
     bmerged = branch --merged
 
+    # Branch/checkout shorter
+    bc = checkout -b
+
     # Checkout previous branch
     clast = checkout @{-1}
 
@@ -16,6 +19,9 @@
 
     # Show the user email for the current repo
     whoami = config user.email
+
+[core]
+    autocrlf = input
 
 [branch]
     sort = -committerdate

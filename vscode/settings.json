@@ -27,8 +27,10 @@
         }
     },
     "terminal.integrated.profiles.linux": {
-        "bash": {
-          "path": "/bin/bash"
+        "Bash (WSL)": {
+            "overrideName": true,
+            "path": "/bin/bash",
+            "args": ["-l"]
         }
     },
 
