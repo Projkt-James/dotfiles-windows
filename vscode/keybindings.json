@@ -15,6 +15,16 @@
         "key": "ctrl+,",
         "command": "workbench.action.showCommands"
     },
+    {
+        "key": "ctrl+`",
+        "command": "revealFileInOS",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+s",
+        "command": "workbench.files.action.showActiveFileInExplorer",
+        "when": "editorTextFocus"
+    },
 
     // Groups
     {
@@ -31,16 +41,9 @@
         "key": "f1",
         "command": "workbench.action.focusFirstEditorGroup"
     },
-
     {
-        "key": "ctrl+1",
-        "command": "revealFileInOS",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+s",
-        "command": "workbench.files.action.showActiveFileInExplorer",
-        "where": "editorTextFocus"
+        "key": "f2",
+        "command": "workbench.action.focusSecondEditorGroup"
     },
 
     // Folding
