@@ -3,10 +3,7 @@
  * AUTHOR: James Hanford
  */
 [
-
-    //
     // VS Code Base
-    //
     {
         "key": "ctrl+,",
         "command": "-workbench.action.openSettings"
@@ -38,14 +35,14 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "f1",
+        "key": "ctrl+f1",
         "command": "workbench.action.focusFirstEditorGroup"
+
     },
     {
-        "key": "f2",
+        "key": "ctrl+f2",
         "command": "workbench.action.focusSecondEditorGroup"
     },
-
     // Folding
     {
         "key": "alt+f1",
@@ -68,9 +65,7 @@
         "when": "editorTextFocus"
     },
 
-    //
     // [Extension] Bookmarks
-    //
     // Clear bookmarks in file
     {
         "key": "alt+backspace",
@@ -119,9 +114,7 @@
         "when": "editorTextFocus"
     },
 
-    //
     // [Language] Sql
-    //
     {
         "key": "f5",
         "command": "-workbench.action.debug.start",

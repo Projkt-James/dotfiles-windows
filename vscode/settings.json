@@ -4,7 +4,7 @@
  */
 {
     // Window
-    "window.zoomLevel": -1.5,
+    "window.zoomLevel": -0.5,
     "window.titleBarStyle": "custom",
 
     // File Explorer & Workbench
@@ -14,6 +14,7 @@
     "workbench.editor.closeEmptyGroups": true,
 
     // Terminal
+    "terminal.integrated.fontFamily": "Cascadia Code PL",
     "terminal.integrated.tabs.enabled": true,
     "terminal.integrated.scrollback": 5000,
     "terminal.integrated.profiles.windows": {
@@ -27,10 +28,13 @@
         }
     },
     "terminal.integrated.profiles.linux": {
-        "Bash (WSL)": {
+        "zsh (WSL)": {
             "overrideName": true,
-            "path": "/bin/bash",
-            "args": ["-l"]
+            "path": "/bin/zsh"
+        },
+        "bash (WSL)": {
+            "overrideName": true,
+            "path": "/bin/bash"
         }
     },
 
@@ -47,15 +51,18 @@
     "[javascript]": {
         "editor.tabSize": 4,
         "editor.formatOnPaste": true,
-        "editor.autoClosingQuotes": "never"
+        "editor.autoClosingQuotes": "never",
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[json]": {
-        "editor.tabSize": 4
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[typescript]": {
         "editor.tabSize": 4,
         "editor.formatOnPaste": true,
-        "editor.autoClosingQuotes": "never"
+        "editor.autoClosingQuotes": "never",
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[yaml]": {
         "editor.tabSize": 4
@@ -84,17 +91,7 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.columnSelection": false,
 
-    "mssql.connections": [
-        {
-            "server": "localhost",
-            "database": "",
-            "authenticationType": "Integrated",
-            "password": ""
-        }
-    ],
-
-    // AWS CloudFormation & SAM
-    "aws.samcli.location": "C:\\Program Files\\Amazon\\AWSSAMCLI\\bin\\sam.cmd",
+    // AWS CloudFormation
     "yaml.customTags": [
         "!And",
         "!And sequence",
